@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>CS Code Challenge</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+  </body>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="js/index.js"></script>
+  <script id="handlebars-section" type="text/x-handlebars-template">
+    <button id="btn-toggle-show">Show</button>
+    <table border="1" id="table-profiles" class="hide">
+      <thead>
+        <th>Name</th>
+        <th>Avatar</th>
+        <th>ID</th>
+        <th>Created Date</th>
+      </thead>
+      <tbody>
+        {{#each rows}}
+          <tr>
+            <td>{{name}}</td>
+            <td>
+              <img src="{{avatar}}" width=50 height=50 />
+            </td>
+            <td>{{id}}</td>
+            <td>{{createdAt}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </script>
+</html> 
