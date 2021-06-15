@@ -8,16 +8,9 @@
 ***
 
 ## Exercise 1: Consuming RESTful API data
-1. Query https://5dc588200bbd050014fb8ae1.mockapi.io/assessment for a list of users.
-2. You may use whatever tool you like for making that request (jQuery AJAX, vanilla jqXHR, ES6 fetch API, etc). But __do not use a JS framework__; that is overkill for this exercise.
-3. Print that data to the DOM in an unordered list.
-    * Use [Handlebars](https://handlebarsjs.com/) to render the data
-    * Each list item must show user name, avatar, created date, and ID
-4. Write unit tests for your JS, using the framework of your choice
-
-### Optional Enhancement 1
-1. Only show name and avatar by default; add a button that reveals the ID and created-date on click.
-2. Set up a simple Node server to deliver the app to http://localhost:3000.
+1. `yarn install`
+2. `yarn start` to run the server
+3. `localhost:3000`
 
 ***
 
@@ -39,11 +32,11 @@ Solve the problems presented in whatever way you deem most appropriate and in ke
 5. Utilize closures to prevent pollution of the global object with app code
 
 #### Features
-1. Make the form keyboard-accessible
-2. Add support for localStorage such that refreshing the page does not reset your task list
-3. Add form validation such that an empty task cannot be submitted.
-4. Convert float-based layouts to flexbox-based layouts. The visuals should not change, just the CSS that handles the layout.
-5. Make the design responsive, such that -
+1. `Uncompleted` - Make the form keyboard-accessible
+2. `Completed` - Add support for localStorage such that refreshing the page does not reset your task list
+3. `Completed` - Add form validation such that an empty task cannot be submitted.
+4. `Completed` - Convert float-based layouts to flexbox-based layouts. The visuals should not change, just the CSS that handles the layout.
+5. `Completed` - Make the design responsive, such that -
     * The form fills 100% width of the screen up until 375px wide
     * The form becomes centered in the page after 375px
     * There should be no horizontal scroll bars present at any width
